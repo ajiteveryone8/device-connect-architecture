@@ -14,7 +14,7 @@ A **plugin-based connectivity platform** that provides a single, consistent API 
 
 ![Device Connect Architecture](docs/images/device-connect-architecture.png)
 
-```mermaid
+```
 flowchart LR
   UI[UI / Client App] -->|gRPC/REST/WebSocket| HOST[Host Service]
 

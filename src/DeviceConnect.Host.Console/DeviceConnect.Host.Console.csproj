@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>DeviceConnect.Host.Console</AssemblyName>
+    <RootNamespace>DeviceConnect</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DeviceConnect.Core\DeviceConnect.Core.csproj" />
+    <ProjectReference Include="..\DeviceConnect.Adapters.Serial\DeviceConnect.Adapters.Serial.csproj" />
+    <ProjectReference Include="..\DeviceConnect.Adapters.Wifi\DeviceConnect.Adapters.Wifi.csproj" />
+    <ProjectReference Include="..\DeviceConnect.Adapters.Bluetooth\DeviceConnect.Adapters.Bluetooth.csproj" />
+    <ProjectReference Include="..\DeviceConnect.Adapters.Plc\DeviceConnect.Adapters.Plc.csproj" />
+  </ItemGroup>
+</Project>

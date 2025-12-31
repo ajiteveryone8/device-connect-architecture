@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>DeviceConnect.Adapters.Bluetooth</AssemblyName>
+    <RootNamespace>DeviceConnect</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DeviceConnect.Core\DeviceConnect.Core.csproj" />
+  </ItemGroup>
+</Project>

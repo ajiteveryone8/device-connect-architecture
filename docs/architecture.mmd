@@ -1,0 +1,22 @@
+flowchart LR
+  UI[UI / Client App] -->|gRPC/REST/WebSocket| HOST[Host Service]
+  subgraph Core["Core Platform"]
+    BUS[Message Bus]
+    SM[Session Manager]
+    REG[Device Registry]
+    CODEC[Codec / Parser]
+    OBS[Observability]
+    STORE[Local Store]
+  end
+  HOST --> Core
+  subgraph Adapters["Adapters"]
+    SER[Serial]
+    WIFI[Wi-Fi]
+    BLE[Bluetooth]
+    PLC[PLC]
+  end
+  REG --> Adapters
+  SER --> CODEC
+  WIFI --> CODEC
+  BLE --> CODEC
+  PLC --> CODEC
